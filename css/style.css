@@ -1,0 +1,77 @@
+h1, h2, h3, h5 {
+    margin: 20px 0px;
+    font-family: "pacifico", cursive;
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.card{
+    color: white;
+    background-image: linear-gradient( #855837, #642610, #925B35);
+    margin-top: 0;
+}
+
+.bottom-links ul{
+    color: black;
+}
+
+.heading h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.postTitle{
+    color: black;
+    font-size: 50px;
+}
+
+#resources{
+    color: black;
+}
+
+.row{
+    color: black;
+}
+
+
+body{
+    background-color: white;
+}   
+
+#contentSection{
+    margin-top: 30px;
+}
+
+.jumbotron{
+    padding: 30px 5px;
+    margin: 0;
+    background-image: linear-gradient( #855837, #642610, #925B35);
+}
+
+.navbar{
+    background-image: linear-gradient( #642610, #925B35);
+}
+
+.container-resources{
+    margin: 50px auto;
+}
+
+.site-footer {
+    background-image: linear-gradient( #855837, #642610, #925B35);
+    padding: 20px 0;
+}
+ 
+#postSection{
+    background-color: white;
+}
+
+#blogPost{
+    margin-top: 50px;
+}
+
+
+
+
+
