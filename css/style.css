@@ -15,6 +15,10 @@ pre{
     color: white;
     background-image: linear-gradient( #855837, #642610, #925B35);
     margin-top: 0;
+
+}
+
+
 }
 
 .bottom-links ul{
@@ -76,7 +80,11 @@ body{
     margin-top: 50px;
 }
 
-
+.blogCollapse{
+    color: white;
+    background-image: linear-gradient( #855837, #642610, #925B35);
+    margin-top: 0;
+}
 
 
 
