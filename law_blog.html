@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid">
+    <header class="jumbotron jumbotron-fluid d-none d-sm-block">
         <div class="container">
             <div class="row">
                 <div class="col-10 heading">
@@ -22,7 +22,7 @@
                 <h2>@Café the Blog!</h2>
                 </div>
                 <div class="col mt-auto">
-                    <a href="#blogPost"><button type="button" class="btn btn-light">Blog ideas</button></a>
+                    <a href="#blogPost"><button type="button" class="btn btn-light btn-sm mb-4">Blog ideas</button></a>
                 </div>
             </div>
         </div>
@@ -52,17 +52,38 @@
         </ol>
     </div>  -->
     
-    <div class="container" id="contentSection" >
+    <div class="container mt-0" id="contentSection">
         <div class="row">
-            <div class="col-md-2" class="sideOne">
+<!-- Display's only on xs screens -->
+            <div class="col-xs-2 col-md-3 col-lg-2 blogCollapse d-block d-sm-none">
+                <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
+                <br>
+                <a class="text-white ml-3" class="nav-link active" href="index.html"> Blog Home</a>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item dropdown"></li>
+                    <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" class="text-white" href="#"><i class="fa fa-user-md fa-md"></i> Heath</a>
+                        <a class="dropdown-item" class="text-white" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
+                        <a class="dropdown-item" class="text-white" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
+                        <a class="dropdown-item" class="text-white" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
+                        <a class="dropdown-item" class="text-white" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
+                        <a class="dropdown-item" class="text-white" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Coffee Shop Page</a>
+                    </div>   
+                </ul>
+            </div> 
+<!-- display on sm and up view ports  -->
+            <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-none d-sm-block mt-5" class="sideOne">
                 <div class="card">
                 <span class="text-center"><h2 class="card-header">Blog Journals</h2></span>
-                    <div class="card-body ">
+                    <div class="card-body">
                         <ul class="list-unstyled" class="blogItems">
                             <li><a class="text-white" href="index.html"><i class="fa fa-home fa-md"></i>Home</a></li>
-                            <li><a class="text-white" href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
+                            <li><a class="text-white" href="index.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
                             <li><a class="text-white" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a></li>
-                            <li><a class="text-white" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Economy</a></li>
+                            <li><a class="text-white" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a></li>
                             <li><a class="text-white" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a></li>
                             <li><a class="text-white" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a></li>
                             <li><a class="text-white" href="#"><i class="fa fa-gavel fa-md"></i> Law</a></li>
@@ -70,14 +91,14 @@
                     </div>
                 </div>
             </div>    
-            <div class="col-md-8 text-center" id="postSection">
-                <h2 class="postTitle">Health</h2>
+            <div class="col-sm col-md col-lg text-center mt-5" id="postSection">
+                <h2 class="postTitle">Law</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt minus voluptate excepturi debitis nihil, voluptatem neque accusamus dicta nesciunt repellat dolor tenetur quisquam minima atque culpa autem magnam consequatur! Recusandae?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque laboriosam praesentium est at, rem quidem sequi natus, veniam quae illum consectetur in doloremque sed asperiores temporibus veritatis saepe. Qui!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias accusantium impedit reprehenderit explicabo rem quidem est ab tenetur, excepturi nulla accusamus reiciendis voluptatibus dolorem id porro facilis minima deserunt.</p>
             </div>
-            <div class="col-md-2" class="sideTwo">
+            <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
                 <div class="card text-center">
                 <a href="https://www.nucamp.co/home" target="_blank"><h2 card="card-header">NuCamp</h2></a>
                     <div class="card-body">
