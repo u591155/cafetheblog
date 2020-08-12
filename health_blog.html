@@ -21,9 +21,6 @@
                 <h1>The Blog!</h1>
                 <h2>@Café the Blog!</h2>
                 </div>
-                <div class="col mt-auto">
-                    <a href="#blogPost"><button type="button" class="btn btn-light btn-sm mb-4">Blog ideas</button></a>
-                </div>
             </div>
         </div>
     </header> 
@@ -111,77 +108,60 @@
     </div>
 
     
-    <div class="container" id="blogPost">
+    
+<!-- resource section below  -->
+    <div class="container mb-4">
+        <hr>
         <div class="row row-content">
-            <div class="col col-md-8 mx-auto">
-                <hr>
-                <form>
-                    <h2 class="postTitle text-center">Health Ideas?</h2>
-                    <div class="form-group row">
-                        <label for="firstName" class="col-form-label">First Name</label>
-                        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
+            <div class=" col-sm-8 mx-auto accordion" id="resourcesToHelp">
+                <h2 class="text-dark text-center" id="healthResources">Resource</h2>
+                <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Resource #1
+                    </button>
+                    </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#resourcesToHelp">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
-                    <div class="form-group row">
-                        <label for="lastName" class="col-form-label">Last Name</label>
-                         <input class="form-control" type="text" id="lastName" id="lastName" placeholder="Last Name">
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Resource #2
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#resourcesToHelp">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
-                    <div class="form-group row">
-                        <label class="col-form-label" for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="email">
+                </div>
+                </div>
+                <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Resource #3
+                    </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#resourcesToHelp">
+                    <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                     </div>
-                    <div class="form-group row"> 
-                        <div class="col">
-                            Would you like to receive new blogs and tips?
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
-                                <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
-                            </div>
-                        <div class="form-check form-check-inline">            
-                            <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
-                            <label class="form-check-label" for="subscribeNo">No</label>
-                        </div>
-                        <hr>
-                        <div class="form-group row">
-                            <label class="col form-label" for="blogIdea">What would you like to read about?</label>
-                            <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col">    
-                                <button class="btn btn-dark" type="Submit">Send</button>
-                            </div>
-                        </div>            
-                    </div>            
-                </form>
+                </div>
+                </div>
             </div>
         </div>
     </div>
-    
-  
-    
-    <div class="container container-resources jumbotron-fluid">
-        <div class="row content">
-            <div class="col-10 text-center mx-auto">
-                <hr>
-                <h2 class="postTitle">Resources to help</h2>
-                <table class="table table-light">
-                    <tbody>
-                        <tr>
-                            <td><a href="#"><img class="img-fluid" src="img/images.png" alt="health"> You For Health</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"> Fitness For You</a></td>
-                            <td><a href="#"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy" > Economy For Everyone</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"> You Are Society</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics"> Politics Affects All</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/law.png" alt="law" >Law As Rules</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </div>
-         </div>
-    </div>  
-
+</div>
 
     <footer class="site-footer">
         <div class="container">

@@ -4,6 +4,7 @@ h1, h2, h3, h5 {
     color: white;
     font-size: 24px;
     font-weight: bolder;
+    text-shadow: 2px 2px #95897A;
 }
 
 pre{
@@ -13,10 +14,12 @@ pre{
 
 .card{
     color: white;
-    background-image: linear-gradient( #855837, #642610, #925B35);
+    /* background-image: linear-gradient( #855837, #642610, #925B35); */
+    background-image: linear-gradient(#402F29, #371F19);
     margin-top: 0;
 
 }
+
 
 
 .bottom-links ul{
@@ -54,11 +57,32 @@ body{
 .jumbotron{
     padding: 30px 5px;
     margin: 0;
-    background-image: linear-gradient( #855837, #642610, #925B35);
+    /* background-image: linear-gradient( #855837, #642610, #925B35); */
+    background-image: url(../img/computercoffeeWide2.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: 0%;
+    background-size: cover;
+    
+   
+    
+}
+
+#xsJumbo{
+    background: url(../img/computercoffeeWide2.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: 0%;
+    background-size: cover;
+}
+
+.dropdown-menu{
+    background-color:#95897A;
 }
 
 .navbar{
-    background-image: linear-gradient( #642610, #925B35);
+    /* background-image: linear-gradient( #642610, #925B35); */
+    background-image: linear-gradient(#402F29, #371F19);
 }
 
 .container-resources{
@@ -66,7 +90,8 @@ body{
 }
 
 .site-footer {
-    background-image: linear-gradient( #855837, #642610, #925B35);
+    /* background-image: linear-gradient( #855837, #642610, #925B35); */
+    background-image: linear-gradient(#402F29, #371F19);
     padding: 20px 0;
 }
  
@@ -80,7 +105,8 @@ body{
 
 .blogCollapse{
     color: white;
-    background-image: linear-gradient( #855837, #642610, #925B35);
+    /* background-image: linear-gradient( #855837, #642610, #925B35); */
+    background-image: linear-gradient(#402F29, #371F19);
     margin-top: 0;
 }
 
