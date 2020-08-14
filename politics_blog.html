@@ -14,15 +14,12 @@
     
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid d-none d-sm-block">
+    <header class="topics d-none d-sm-block">
         <div class="container">
             <div class="row">
                 <div class="col-10 heading">
                 <h1>The Blog!</h1>
                 <h2>@Café the Blog!</h2>
-                </div>
-                <div class="col mt-auto">
-                    <a href="#blogPost"><button type="button" class="btn btn-light btn-sm mb-4">Blog ideas</button></a>
                 </div>
             </div>
         </div>
@@ -39,7 +36,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-md"></i> About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-coffee fa-md"></i> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-book fa-md"></i> Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-folder-open fa-md"></i> Page Development</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-folder-open fa-md"></i> Page Development</a></li> -->
                 </ul>
             </div>   
         </div> 
@@ -55,42 +52,44 @@
     <div class="container mt-0" id="contentSection">
         <div class="row">
 <!-- Display's only on xs screens -->
-            <div class="col-xs-2 col-md-3 col-lg-2 blogCollapse d-block d-sm-none">
-                <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
-                <br>
-                <a class="text-white ml-3" class="nav-link active" href="index.html"> Blog Home</a>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item dropdown"></li>
-                    <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" class="text-white" href="#"><i class="fa fa-user-md fa-md"></i> Heath</a>
-                        <a class="dropdown-item" class="text-white" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
-                        <a class="dropdown-item" class="text-white" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
-                        <a class="dropdown-item" class="text-white" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
-                        <a class="dropdown-item" class="text-white" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
-                        <a class="dropdown-item" class="text-white" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Coffee Shop Page</a>
-                    </div>   
-                </ul>
-            </div> 
+        <div class="col blogCollapse d-block d-sm-none">
+            <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
+            <br>
+            <ul class="nav nav-tabs">
+                <li class="nav-item dropdown"></li>
+                <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item"  href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a>
+                    <a class="dropdown-item"  href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
+                    <a class="dropdown-item"  href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
+                    <a class="dropdown-item"  href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
+                    <a class="dropdown-item"  href="#"><i class="fa fa-university fa-md"></i> Politics</a>
+                    <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#healthResources"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                    <a class="dropdown-item" href="index.html"><i class="fa fa-home fa-md"></i> Blog Page</a>
+                    <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
+                </div>   
+            </ul>
+        </div> 
 <!-- display on sm and up view ports  -->
-            <div class="col-sm-4 col-md-3 col-lg-2 col-xl-2 d-none d-sm-block mt-5" class="sideOne">
-                <div class="card">
-                <span class="text-center"><h2 class="card-header">Blog Journals</h2></span>
-                    <div class="card-body">
+            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block mt-5 border-right">
+                <h3 class="text-dark ml-3 border-bottom">Topics</h3></span>
                         <ul class="list-unstyled" class="blogItems">
-                            <li><a class="text-white" href="index.html"><i class="fa fa-home fa-md"></i>Home</a></li>
-                            <li><a class="text-white" href="index.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
-                            <li><a class="text-white" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a></li>
-                            <li><a class="text-white" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a></li>
-                            <li><a class="text-white" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a></li>
-                            <li><a class="text-white" href="#"><i class="fa fa-university fa-md"></i> Politics</a></li>
-                            <li><a class="text-white" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a></li>
+                            <nav class="nav flex-column">
+                                <a class="nav-link" href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
+                                <a class="nav-link" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a></li>
+                                <a class="nav-link" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Economy</a></li>
+                                <a class="nav-link" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Social</a></li>
+                                <a class="nav-link" href="#"><i class="fa fa-university fa-md"></i> Politics</a></li>
+                                <a class="nav-link" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a></li>
+                                <a class="nav-link" href="index.html">-Blog Home-</a>
+                                <a class="nav-link" href="#healthResources">-Resources-</a></li>
+                              </nav>
                         </ul>
-                    </div>
-                </div>
-            </div>     
+            </div> 
+            
+<!-- end of new section -->  
             <div class="col-sm col-md col-lg text-center mt-5" id="postSection">
                 <h2 class="postTitle">Politics</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
@@ -98,89 +97,99 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque laboriosam praesentium est at, rem quidem sequi natus, veniam quae illum consectetur in doloremque sed asperiores temporibus veritatis saepe. Qui!</p>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias accusantium impedit reprehenderit explicabo rem quidem est ab tenetur, excepturi nulla accusamus reiciendis voluptatibus dolorem id porro facilis minima deserunt.</p>
             </div>
-            <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
-                <div class="card text-center">
-                <a href="https://www.nucamp.co/home" target="_blank"><h2 card="card-header">NuCamp</h2></a>
-                    <div class="card-body">
-                    <a href="https://www.nucamp.co/home" target="_blank"><img src="img/logo.png" alt="nucamp logo"></a>
-                    <p>This project was developed with skills gain at NUcamp coding Bootcamp</p>
-                    </div>
-                </div>
-            </div>        
-        </div>    
-    </div>
-
-    
-    <div class="container" id="blogPost">
-        <div class="row row-content">
-            <div class="col col-md-8 mx-auto">
-                <hr>
-                <form>
-                    <h2 class="postTitle text-center">Politics Ideas?</h2>
-                    <div class="form-group row">
-                        <label for="firstName" class="col-form-label">First Name</label>
-                        <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
-                    </div>
-                    <div class="form-group row">
-                        <label for="lastName" class="col-form-label">Last Name</label>
-                         <input class="form-control" type="text" id="lastName" id="lastName" placeholder="Last Name">
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-form-label" for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="email">
-                    </div>
-                    <div class="form-group row"> 
-                        <div class="col">
-                            Would you like to receive new blogs and tips?
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
-                                <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
-                            </div>
-                        <div class="form-check form-check-inline">            
-                            <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
-                            <label class="form-check-label" for="subscribeNo">No</label>
-                        </div>
-                        <hr>
-                        <div class="form-group row">
-                            <label class="col form-label" for="blogIdea">What would you like to read about?</label>
-                            <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col">    
-                                <button class="btn btn-dark" type="Submit">Send</button>
-                            </div>
-                        </div>            
-                    </div>            
-                </form>
-            </div>
+ <!-- new section added -->
+ <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
+    <div class="card bg-light text-left">
+        <div class="card-body">
+        <a href="https://www.nucamp.co/home" target="_blank"><img class="ml-2" src="img/logo.png" alt="nucamp logo"></a>
+        <p>This project was developed with skills gain at NUcamp coding Bootcamp</p>
         </div>
     </div>
-    
-  
-    
-    <div class="container container-resources jumbotron-fluid">
-        <div class="row content">
-            <div class="col-10 text-center mx-auto">
-                <hr>
-                <h2 class="postTitle">Resources to help</h2>
-                <table class="table table-light">
-                    <tbody>
-                        <tr>
-                            <td><a href="#"><img class="img-fluid" src="img/images.png" alt="health"> You For Health</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"> Fitness For You</a></td>
-                            <td><a href="#"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy" > Economy For Everyone</a></td>
-                        </tr>
-                        <tr>
-                            <td><a href="#"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"> You Are Society</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics"> Politics Affects All</a></td>
-                            <td><a href="#"><img class="img-fluid" src="img/law.png" alt="law" >Law As Rules</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            </div>
-         </div>
-    </div>  
+</div>        
+</div>    
+</div>
+
+<div class="container mt-5">
+<hr>
+<h3 class="text-center text-dark mt-5 mb-5">Additional Reads</h3>
+<div class="row row-content">
+<div class="col-sm-8 col-md-6 col-lg">
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pump4.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="col-sm-8 col-md-6 col-lg">
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pump1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+<div class="col-8 col-lg">
+    <div class="card" style="width: 18rem;">
+        <img src="./img/pump3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container mt-5 mb-5">
+<div class="row">
+<div class="col card bg-light">
+    <div class="card-header bg-danger">
+      Quote
+    </div>
+    <div class="card-body">
+      <blockquote class="blockquote mb-0">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container mt-5 mb-5">
+<h3 class="text-dark text-center" id="healthResources">Resource</h3>
+<div class="row">
+<div class="col-sm-4">
+  <div class="card bg-light">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div>
+</div>
+<div class="col-sm-4">
+    <div class="card bg-light">
+        <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-danger">Go somewhere</a>
+        </div>
+    </div>
+</div>
+<div class="col-sm-4">
+  <div class="card bg-light">
+    <div class="card-body">
+      <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-danger">Go somewhere</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- end new section    -->
+
 
 
     <footer class="site-footer">

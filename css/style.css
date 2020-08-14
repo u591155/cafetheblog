@@ -1,10 +1,15 @@
-h1, h2, h3, h5 {
+h1, h2{
     margin: 20px 0px;
     font-family: "pacifico", cursive;
     color: white;
     font-size: 24px;
     font-weight: bolder;
     text-shadow: 2px 2px #95897A;
+
+}
+
+h3{
+    font-family: serif;
 }
 
 pre{
@@ -13,13 +18,20 @@ pre{
 }
 
 .card{
-    color: white;
-    /* background-image: linear-gradient( #855837, #642610, #925B35); */
-    background-image: linear-gradient(#402F29, #371F19);
+    color: black;
+    background-color: gray
     margin-top: 0;
-
 }
 
+.cardMod{
+    background-color: gray;
+    margin-left: 25px;
+    color: black;
+}
+
+.card-body{
+    color: ;
+}
 
 
 .bottom-links ul{
@@ -55,21 +67,29 @@ body{
 }
 
 .jumbotron{
-    padding: 30px 5px;
+    padding: 350px 20px;
     margin: 0;
-    /* background-image: linear-gradient( #855837, #642610, #925B35); */
-    background-image: url(../img/computercoffeeWide2.jpg);
+    background-image: url(../img/modifiednbanner.jpg);
     background-repeat: no-repeat;
     background-color: black;
-    background-position: 0%;
+    background-position: center center;
     background-size: cover;
-    
+    background-attachment: fixed;
+}    
+
+.topics{
+    padding: 20px 5px;
+    background-image: url(../img/coffeegrains.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}    
    
-    
-}
 
 #xsJumbo{
-    background: url(../img/computercoffeeWide2.jpg);
+    background: url(../img/webinar-banner-website.png);
     background-repeat: no-repeat;
     background-color: black;
     background-position: 0%;
@@ -81,7 +101,6 @@ body{
 }
 
 .navbar{
-    /* background-image: linear-gradient( #642610, #925B35); */
     background-image: linear-gradient(#402F29, #371F19);
 }
 
@@ -90,7 +109,6 @@ body{
 }
 
 .site-footer {
-    /* background-image: linear-gradient( #855837, #642610, #925B35); */
     background-image: linear-gradient(#402F29, #371F19);
     padding: 20px 0;
 }
@@ -105,10 +123,24 @@ body{
 
 .blogCollapse{
     color: white;
-    /* background-image: linear-gradient( #855837, #642610, #925B35); */
     background-image: linear-gradient(#402F29, #371F19);
     margin-top: 0;
 }
 
+.fl::first-letter {
+    font-size: 200%;
+    font-family: cursive;
+  }
 
+ .flex-column a{
+     color: black;
+ } 
 
+.flex-column a:hover{
+    font-size: 22px;
+    color: green;
+}
+
+.btn-olive{
+    color: #717343;
+}
