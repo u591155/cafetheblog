@@ -14,11 +14,11 @@
     
 </head>
 <body>
-    <header class="jumbotron jumbotron-fluid d-none d-sm-block">
+<!--    <header class="jumbotron jumbotron-fluid d-none d-sm-block">  -->
         <div class="container">
             <div class="row">
                 <div class="col-10 heading">
-                <h1>The Blog!</h1>
+                <h1>The Menu!</h1>
                 <h2>@Café the Blog!</h2>
                 </div>
                 <div class="col mt-auto">
@@ -44,36 +44,115 @@
             </div>   
         </div> 
     </nav>
-
-    <div class="container mt-0" id="menu">
-        <div class="row">
-            <div class="col-sm col-md col-lg text-center mt-5" id="menuDrinks">
-                <h2 class="postTitle">Drinks</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-            </div>
-            <div class="col-sm col-md col-lg text-center mt-5" id="menuFood">
-                <h2 class="postTitle">Food</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt minus voluptate excepturi debitis nihil, voluptatem neque accusamus dicta nesciunt repellat dolor tenetur quisquam minima atque culpa autem magnam consequatur! Recusandae?</p>
+    
+<!-- MENU STARTS -->    
+    
+    <div class="row row-content">
+        <div class="col">
+            <h3>Menu</h3>
+            <div id="accordion">
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a data-toggle="collapse" data-target="#coffee"> Coffee </a>
+                        </h4>
+                        <div class="collapse show" id="coffee" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Coffee Options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#drinks"> Not Coffee </a>
+                        </h4>
+                        <div class="collapse" id="drinks" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Other Beverages</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#food"> Food </a>
+                        </h4>
+                        <div class="collapse" id="food" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Food Options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div role="tab" class="card-header">
+                        <h4>
+                            <a class="collapsed" data-toggle="collapse" data-target="#boxes"> Subscription Boxes </a>
+                        </h4>
+                        <div class="collapse" id="boxes" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="d-none d-sm-block">Boxes Options</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    
 
-    <div class="container mt-0" id="menu">
-        <div class="row">
-            <div class="col-sm col-md col-lg text-center mt-5" id="menuBoxes">
-                <h2 class="postTitle">Subscription Boxes</h2>
-                    <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
-                        <li>Item 4</li>
-                    </ul>
-            </div>
-        </div>
+
+    
+    <!-- AND ANOTHER MENU OPTION -->
+    
+<div class="container">
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 text-center">
+      <h1 class="bg-dark font-weight-bold">Menu</h1>
+      <hr>
     </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 pb-5 text-center">
+      <h4 class="text-center quicksand-font text-uppercase">COFFEE</h4>
+      <p class="text-uppercase">Brewed</p>
+      <p class="text-uppercase">Latte</p>
+      <p class="text-uppercase">Mocha</p>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 pb-5 text-center">
+      <h4 class="text-center quicksand-font text-uppercase">FOOD</h4>
+      <p class="text-uppercase">Bagel</p>
+      <p class="text-uppercase">Sandwich</p>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 pb-5 text-center">
+      <h4 class="text-center quicksand-font text-uppercase">PASTRIES</h4>
+      <p class="text-uppercase">Muffin</p>
+      <p class="text-uppercase">Croissant</p>
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-10 pb-5 text-center">
+      <h4 class="text-center quicksand-font text-uppercase">SUBSCRIPTION BOXES</h4>
+      <p class="text-uppercase">Option 1</p>
+      <p class="text-uppercase">Option 2</p>
+    </div>
+  </div>
+</div>
+    
 
+    
+    
+
+
+    
+<!-- DON'T CHANGE THE BELOW OR ASK TO BE CHANGED IN ALL PAGES -->
 
 
     <footer class="site-footer">
@@ -113,6 +192,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+
+    
     
 </body>
 </html>
