@@ -41,6 +41,10 @@ pre{
     font-size: 50px;
 }
 
+#postSection p{
+    font-size: 18px;
+}
+
 #resources{
     color: black;
 }

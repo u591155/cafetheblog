@@ -24,7 +24,7 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-md"></i> About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-coffee fa-md"></i> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-book fa-md"></i> Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blogPost"><i class="fa fa-arrow-down"></i> Blog ideas</a>
+                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#topicsModal"><i class="fa fa-arrow-down"></i> Blog ideas</a>
                 </ul>
             </div>   
         </div> 
@@ -56,7 +56,7 @@
                         <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
                         <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#healthResources"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                        <a class="dropdown-item" href="#resourcesToHelp"><i class="fa fa-handshake-o"></i> Resources</a></li>
                         <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
                     </div>   
@@ -96,103 +96,356 @@
             </div>
         </div>        
    
-
-        <div class="container" id="blogPost">
-            <div class="row row-content">
-                <div class="col col-md-8 mx-auto">
-                    <hr>
-                    <form>
-                        <h2 class="postTitle text-center">Topic ideas?</h2>
-                        <div class="form-group row">
-                            <label for="firstName" class="col-form-label">First Name</label>
-                            <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
-                        </div>
-                        <div class="form-group row">
-                            <label for="lastName" class="col-form-label">Last Name</label>
-                            <input class="form-control" type="text" id="lastName" id="lastName" placeholder="Last Name">
-                        </div>
-                        <div class="form-group row">
-                            <label class="col-form-label" for="email">Email</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="email">
-                        </div>
-                        <div class="form-group row"> 
-                            <div class="col">
-                                Would you like to receive new blogs and tips?
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
-                                    <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
-                                </div>
-                            <div class="form-check form-check-inline">            
-                                <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
-                                <label class="form-check-label" for="subscribeNo">No</label>
-                            </div>
-                            <hr>
-                            <div class="form-group row">
-                                <label class="col form-label" for="blogIdea">What would you like to read about?</label>
-                                <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col">    
-                                    <button class="btn btn-dark" type="Submit">Send</button>
-                                </div>
-                            </div>   
-                        </div>                      
-                    </form>
-                </div>
-            </div>
-        </div>
-
-        <div class="container container-resources jumbotron-fluid">
+        <div class="container container-resources">
             <div class="row content">
-                <div class="col-10 text-center mx-auto">
+                <div class="col text-center">
                     <hr>
-                    <h2 id="resourcesToHelp" class="postTitle">Resources to help</h2>
+                    <h2 id="resourcesToHelp" class="postTitle bg-light">Resources to help</h2>
                     <table class="table table-light">
                         <tbody>
                             <tr>
-                                <td><a href="health_blog.html""><img class="img-fluid" src="img/images.png" alt="health"> You For Health</a></td>
-                                <td><a href="#"><img class="img-fluid" src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"> Fitness For You</a></td>
-                                <td><a href="#"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy" > Economy For Everyone</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><img class="img-fluid" src="img/images.png" alt="health"> Health</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><img class="img-fluid"  src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"> Fitness</a></td>
                             </tr>
                             <tr>
-                                <td><a href="#"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"> You Are Society</a></td>
-                                <td><a href="#"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics"> Politics Affects All</a></td>
-                                <td><a href="#"><img class="img-fluid" src="img/law.png" alt="law" >Law As Rules</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"> Society</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy">Economy</a></td>
+                            </tr>
+                            <tr>
+                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics">Politics</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><img class="img-fluid" src="img/law.png" alt="law">Law</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
- 
 
-    <footer class="site-footer jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled" class="bottom-links">
-                        <li><a class="text-white" href="#">Home</a></li>
-                        <li><a class="text-white" href="#">About Us</a></li>
-                        <li><a class="text-white" href="#">Menu</a></li>
-                        <li><a class="text-white" href="#">Blog</a></li>
-                    </ul>
+        <!-- Modal Fitness -->
+        <div class="modal fade" id="fitnessModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Fitness Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Older Adults And Exercise</h5>
+                                <p class="card-text">Learn the benefits of exercise for older adults and how to get started.</p>
+                                <a href="https://www.nia.nih.gov/health/exercise-physical-activity" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Tips For Home Workouts</h5>
+                                <p class="card-text">There are so many options for exercising, here are some help to find yours.</p>
+                                <a href="https://www.shape.com/fitness/tips/our-25-all-time-best-workout-tips" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Fitness Also Needs Diet</h5>
+                                <p class="card-text">The word diet should not scare you, but is important for the body and mind.</p>
+                                <a href="https://www.healthline.com/health/fitness-exercise-eating-healthy#:~:text=Nutrition%20is%20important%20for%20fitness,as%20choosing%20vegetables%20over%20doughnuts." 
+                                class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>       
+
+        <!-- Health Modal -->
+        <div class="modal fade" id="healthModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Health Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Mental Health</h5>
+                                <p class="card-text">Taking care of your health should not be hard and should be made a priority.</p>
+                                <a href="https://www.onemedical.com/services/mentalhealth/?gclid=Cj0KCQjw7Nj5BRCZARIsABwxDKKLgjeODtGWbu0sDY4OWQXZG083kIsIltLt0B5HSLnmFaSjDpjpq6oaAmhZEALw_wcB" 
+                                class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Help With Addiction</h5>
+                                <p class="card-text">Addictions is difficult to deal with, but there are many places that can lay a hand.</p>
+                                <a href="https://www.samhsa.gov/find-help/national-helpline" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Anxiety a silent enemy</h5>
+                                <p class="card-text">Just because you don't see it anxiety and depression are real, find help.</p>
+                                <a href="https://www.crisistextline.org/topics/anxiety/?gclid=Cj0KCQjw7Nj5BRCZARIsABwxDKKUEOubqWIXzj0Jc1vLl16V0llH7KuQcVLuzrVe6akkFRZxvF-QbycaAhZpEALw_wcB#what-is-anxiety-1"
+                                  class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
-                <div class="col-sm-4 text-center">
-                    <h5>Contact Us</h5>
-                    <a role="button" class="btn btn-link text-white" href="#"><i class="fa fa-phone"></i> 1-415-688-7766</a><br />
-                    <a role="button" class="btn btn-link text-white" href="#"><i class="fa fa-envelope-o"></i> blogs@cafetheblog.com</a>
-                </div>                 
             </div>
         </div>
-    </footer>
+
+        <!-- Economy Modal -->
+        <div class="modal fade" id="economyModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Economy Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Economic knowledge</h5>
+                                <p class="card-text">The Balance makes personal finance easy to understand. It is home to experts who provide clear, practical advice on managing your money.</p>
+                                <a href="https://www.thebalance.com/about-us" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Loans And Credit</h5>
+                                <p class="card-text">Everyone needs help when looking to make purchases whether big or small, so here we help you shine some light with comparisons.</p>
+                                <a href="https://www.nerdwallet.com/blog/finance/how-to-build-a-budget/" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Government Services And Information</h5>
+                                <p class="card-text">Partnering with federal agencies, we reach out to people where they are, to connect them with their government.</p>
+                                <a href="https://www.usa.gov/" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Society Modal -->
+        <div class="modal fade" id="societyModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Society Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Shop Small And Help Your Community</h5>
+                                <p class="card-text">Local business need help, find ways that you can shop the things you need local.</p>
+                                <a href="https://www.moneycrashers.com/shop-local-support-small-business-local-economy/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Local Events To Help You Stay Connected</h5>
+                                <p class="card-text">Find out what is happening locally to stay connected about what is going on.</p>
+                                <a href="https://www.eventbrite.com/d/ca--san-francisco/community--events/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Society And Loss Of Housing</h5>
+                                <p class="card-text">Losing the place is very difficult, but there are many resources that can help.</p>
+                                <a href="https://chp-sf.org/properties-landing/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Politics Modal -->
+        <div class="modal fade" id="politicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Politics Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Political Indicators</h5>
+                                <p class="card-text">Here are some ways to stay informed about the current political climate and indicatiors.</p>
+                                <a href="https://www.politicalresources.com/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Public Policy</h5>
+                                <p class="card-text">What is a policy can be hard to understand, specially when some might seem like common sense.</p>
+                                <a href="https://agb.org/public-policy-resources/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">COVID-19 & Politics</h5>
+                                <p class="card-text">Politics right now cannot be talked about side by side with the current pandemic, and here we show you why.</p>
+                                <a href="https://www.chathamhouse.org/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>          
+        <!-- Law Modal -->
+        <div class="modal fade" id="lawModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Law Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Evictions And Your Rights</h5>
+                                <p class="card-text">In big cities most people rent, but what happens if you can't pay?</p>
+                                <a href="https://flip.lease/learn/being-evicted/eviction-laws" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">American Civil Liberties Union</h5>
+                                <p class="card-text">With 100 years of experience fighting for rights, they are experts on change.</p>
+                                <a href="https://www.aclu.org/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Lawyer's Directory</h5>
+                                <p class="card-text">Help finding a lawyer and tips on what you can do to protect your rights.</p>
+                                <a href="https://www.avvo.com/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog idea modals -->
+        <div class="modal fade" id="topicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Would you like to submit your idea?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-form-label">First Name</label>
+                                <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-form-label">Last Name</label>
+                                <input class="form-control" type="text" id="lastName" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label" for="email">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="email">
+                            </div>
+                            <div class="form-group row"> 
+                                <div class="col">
+                                    Would you like to receive new blogs and tips?
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
+                                        <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
+                                    </div>
+                                <div class="form-check form-check-inline">            
+                                    <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
+                                    <label class="form-check-label" for="subscribeNo">No</label>
+                                </div>
+                                <hr>
+                                <div class="form-group row">
+                                    <label class="col form-label" for="blogIdea">What would you like to read about?</label>
+                                    <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col">    
+                                        <button class="btn btn-dark" type="Submit">Send</button>
+                                    </div>
+                                </div>   
+                            </div>                      
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+</div> 
+</div>   
+        <footer class="site-footer jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 col-sm-2 offset-1">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled" class="bottom-links">
+                            <li><a class="text-white" href="#">Home</a></li>
+                            <li><a class="text-white" href="#">About Us</a></li>
+                            <li><a class="text-white" href="#">Menu</a></li>
+                            <li><a class="text-white" href="#">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    </div>
+                    <div class="col-sm-4 text-center">
+                        <h5>Contact Us</h5>
+                        <a role="button" class="btn btn-link text-white" href="#"><i class="fa fa-phone"></i> 1-415-688-7766</a><br />
+                        <a role="button" class="btn btn-link text-white" href="#"><i class="fa fa-envelope-o"></i> blogs@cafetheblog.com</a>
+                    </div>                 
+                </div>
+            </div>
+        </footer>
 
     
     
