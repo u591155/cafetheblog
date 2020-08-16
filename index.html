@@ -8,7 +8,6 @@
     <!-- Additional CSS must be placed after Bootstrap CSS -->
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-     <link rel="stylesheet" href="https://fonts.google.com/?sidebar.open=true&selection.family=Pacifico" />
      <link rel="stylesheet" href="css/style.css"> 
      <title>Home Page</title>
     
@@ -25,7 +24,6 @@
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-address-card fa-md"></i> About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-coffee fa-md"></i> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-book fa-md"></i> Blog</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-folder-open fa-md"></i> Page Development</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#blogPost"><i class="fa fa-arrow-down"></i> Blog ideas</a>
                 </ul>
             </div>   
@@ -42,72 +40,63 @@
         </div>
     </header> 
     
-    <!-- this will go on the next pages to come
-    <div class="container">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        </ol>
-    </div>  -->
-    
     <div class="container mt-0" id="contentSection">
         <div class="row">
 <!-- Display's only on xs screens -->
-        <div class="col blogCollapse d-block d-sm-none">
-            <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
-            <br>
-            <ul class="nav nav-tabs">
-                <li class="nav-item dropdown"></li>
-                <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item"  href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a>
-                    <a class="dropdown-item"  href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
-                    <a class="dropdown-item"  href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
-                    <a class="dropdown-item"  href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
-                    <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
-                    <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#healthResources"><i class="fa fa-handshake-o"></i> Resources</a></li>
-                    <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
-                    <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
-                </div>   
+            <div class="col blogCollapse d-block d-sm-none">
+                <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item dropdown"></li>
+                    <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"  href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a>
+                        <a class="dropdown-item"  href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
+                        <a class="dropdown-item"  href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
+                        <a class="dropdown-item"  href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
+                        <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
+                        <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#healthResources"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                        <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
+                        <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
+                    </div>   
+                </ul>
+            </div>
+        </div>     
+<!-- display on sm and up view ports  -->
+        <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block mt-5 border-right">
+            <h3 class="text-dark ml-3 border-bottom">Topics</h3></span>
+            <ul class="list-unstyled" class="blogItems">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
+                    <a class="nav-link" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a></li>
+                    <a class="nav-link" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Economy</a></li>
+                    <a class="nav-link" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Social</a></li>
+                    <a class="nav-link" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a></li>
+                    <a class="nav-link" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a></li>
+                    <a class="nav-link" href="#">-Blog Home-</a>
+                    <a class="nav-link" href="#healthResources">-Resources-</a></li>
+                </nav>
             </ul>
         </div> 
-<!-- display on sm and up view ports  -->
-            <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block mt-5 border-right">
-                <h3 class="text-dark ml-3 border-bottom">Topics</h3></span>
-                        <ul class="list-unstyled" class="blogItems">
-                            <nav class="nav flex-column">
-                                <a class="nav-link" href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Heath</a></li>
-                                <a class="nav-link" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a></li>
-                                <a class="nav-link" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Economy</a></li>
-                                <a class="nav-link" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Social</a></li>
-                                <a class="nav-link" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a></li>
-                                <a class="nav-link" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a></li>
-                                <a class="nav-link" href="#">-Blog Home-</a>
-                                <a class="nav-link" href="#healthResources">-Resources-</a></li>
-                              </nav>
-                        </ul>
-            </div> 
             
-<!-- end of new section -->
-            <div class="col-sm col-md col-lg text-center mt-4" id="postSection">
-                <hr>
-                <h2 class="postTitle mt-5">Newest Post</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt minus voluptate excepturi debitis nihil, voluptatem neque accusamus dicta nesciunt repellat dolor tenetur quisquam minima atque culpa autem magnam consequatur! Recusandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque laboriosam praesentium est at, rem quidem sequi natus, veniam quae illum consectetur in doloremque sed asperiores temporibus veritatis saepe. Qui!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias accusantium impedit reprehenderit explicabo rem quidem est ab tenetur, excepturi nulla accusamus reiciendis voluptatibus dolorem id porro facilis minima deserunt.</p>
-            </div>
-            <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
-                <div class="card bg-light text-left">
-                    <div class="card-body">
+        <div class="col-sm col-md col-lg text-center mt-4" id="postSection">
+            <hr>
+            <h2 class="postTitle mt-5">Newest Post</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt minus voluptate excepturi debitis nihil, voluptatem neque accusamus dicta nesciunt repellat dolor tenetur quisquam minima atque culpa autem magnam consequatur! Recusandae?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque laboriosam praesentium est at, rem quidem sequi natus, veniam quae illum consectetur in doloremque sed asperiores temporibus veritatis saepe. Qui!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias accusantium impedit reprehenderit explicabo rem quidem est ab tenetur, excepturi nulla accusamus reiciendis voluptatibus dolorem id porro facilis minima deserunt.</p>
+        </div>
+        <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
+            <div class="card bg-light text-left">
+                <div class="card-body">
                     <a href="https://www.nucamp.co/home" target="_blank"><img class="ml-2" src="img/logo.png" alt="nucamp logo"></a>
                     <p>This project was developed with skills gain at NUcamp coding Bootcamp</p>
-                    </div>
                 </div>
-            </div>        
-        </div>    
-    </div>
+            </div>
+        </div>        
+    </div>    
 
     <div class="container" id="blogPost">
         <div class="row row-content">
@@ -147,15 +136,12 @@
                             <div class="col">    
                                 <button class="btn btn-dark" type="Submit">Send</button>
                             </div>
-                        </div>            
-                    </div>            
+                        </div>   
+                    </div>                      
                 </form>
             </div>
         </div>
     </div>
-    
-  
-    
     <div class="container container-resources jumbotron-fluid">
         <div class="row content">
             <div class="col-10 text-center mx-auto">
@@ -176,12 +162,9 @@
                     </tbody>
                 </table>
             </div>
-            </div>
-         </div>
+        </div>
     </div>  
-
-
-    <footer class="site-footer">
+    <footer class="site-footer jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2 offset-1">
@@ -191,7 +174,6 @@
                         <li><a class="text-white" href="#">About Us</a></li>
                         <li><a class="text-white" href="#">Menu</a></li>
                         <li><a class="text-white" href="#">Blog</a></li>
-                        <li><a class="text-white" href="#">Page Development</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5 text-center">
