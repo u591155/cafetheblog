@@ -149,3 +149,12 @@ body{
 .menu{
     background-color: black;
 }
+
+table .fa{
+    font-size: 30px;
+}
+
+table .fa:hover{
+    color: brown;
+    font-size: 40px;
+}

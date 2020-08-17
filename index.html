@@ -56,7 +56,7 @@
                         <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
                         <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#resourcesToHelp"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                        <a class="dropdown-item" data-toggle="modal" data-target="#resourcesModal"><i class="fa fa-handshake-o"></i> Resources</a></li>
                         <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
                     </div>   
@@ -80,12 +80,9 @@
             </ul>
         </div> 
             
-        <div class="col-sm col-md col-lg text-center mt-4" id="postSection">
-            <h2 class="postTitle mt-5">Newest Post</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt minus voluptate excepturi debitis nihil, voluptatem neque accusamus dicta nesciunt repellat dolor tenetur quisquam minima atque culpa autem magnam consequatur! Recusandae?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque laboriosam praesentium est at, rem quidem sequi natus, veniam quae illum consectetur in doloremque sed asperiores temporibus veritatis saepe. Qui!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia alias accusantium impedit reprehenderit explicabo rem quidem est ab tenetur, excepturi nulla accusamus reiciendis voluptatibus dolorem id porro facilis minima deserunt.</p>
+        <div class="col-sm col-md col-lg mt-4" id="postSection">
+        <h2 class="postTitle text-center mt-mb-5">Welcome Message</h2>
+            <p class="mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
         </div>
         <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
             <div class="card bg-light text-left">
@@ -94,30 +91,92 @@
                     <p>This project was developed with skills gain at NUcamp coding Bootcamp</p>
                 </div>
             </div>
-        </div>        
-   
-        <div class="container container-resources">
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-10">
+                    <h2 class="postTitle text-center mt-5 mb-5">New Blog Post</h2>
+                    <br>
+                    <h3>Stressful And Uncertain Times</h3>
+                    <hr>
+                    <p>It can be said that during modern history since the flu pandemic caused by H1N1 influenza A virus that lasted from February 1918 to April 2020 (which infected one third of the population in four successive waves) we have not seen anything until now. 
+                    Sure there has been some other diseases, but not one that has put the world to an abrupt shake. </p>
+                    <p>Population is larger and constant government shutdowns have occur. This is not about the economic impact or political measurements taken, but one piece that keeps being ignored in many media channels is the effect that is having in peoples mental health. 
+                    We are creatures that socialize, and even though technology allows you to communicate with each other within seconds around the world nothing will compare to close proximity with another human. Not just people that we know through social platforms, but the ones that matter the most our loved ones and friends. </p>    
+                    <p>Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety. However, these actions are necessary to reduce the spread of COVID-19. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. 
+                    Something that can be useful as a stress reliever is taking care of your loved ones, but there should be a balance with also taking care of yourself. It is difficult to identify or even come to terms with the idea that a person is having a mental struggle during these difficult times. </p>    
+                    <br>        
+                <pre>
+                    • Fear and worry about your own health and the health of your loved
+                    ones, your financial situation or job, or loss of support services you rely on.
+                    • Changes in sleep or eating patterns.
+                    • Difficulty sleeping or concentrating.
+                    • Worsening of chronic health problems.
+                    • Worsening of mental health conditions.
+                    • Increased use of tobacco, and/or alcohol and other substances.
+                </pre>
+                <p>It is important to find ways to maintain a proper mental balance every day, but it can be difficult when the world in going through a time where sometimes it seems like we are just rolling with the punches. Understand that depressing is a lot more comment than you might imagine, so do not feel like you are the only one. Start small... 
+                talk to a close friend or family member about what you are going through and you might find that you might not be the only one.  </p>     
+                </div>
+            </div>
+        </div>
+    
+        <!-- <div class="container container-resources">
             <div class="row content">
-                <div class="col text-center">
+                <div class="col-3 text-center">
                 <hr>
-                <h2 id="resourcesToHelp" class="postTitle bg-light">Resources to help</h2>
-                    <table class="table table-light">
+                <h2 id="resourcesToHelp" class="postTitle bg-white">Resources</h2>
+                    <table class="table table-white">
                         <tbody>
                             <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><img class="img-fluid" src="img/images.png" alt="health"> Health</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><img class="img-fluid"  src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"> Fitness</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><img class="img-fluid" src="img/images.png" alt="health"><br> Health</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><img class="img-fluid"  src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"><br>Fitness</a></td>
                             </tr>
                             <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"> Society</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy">Economy</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"><br> Society</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy"><br>Economy</a></td>
                             </tr>
                             <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics">Politics</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><img class="img-fluid" src="img/law.png" alt="law">Law</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics"><br>Politics</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><img class="img-fluid" src="img/law.png" alt="law"><br>Law</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
+        </div> -->
+
+        <div class="container container-resources">
+            <div class="row content">
+                <div class="col-xs col-3 col-md-3 col-lg-3 text-center mt-5 mr-5">
+                <hr>
+                Resources
+                    <table class="table table-white">
+                        <tbody>
+                            <tr>
+                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><i class="fa fa-heartbeat fa-lg"></i><br> Health</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><i class="fa fa-bicycle fa-lg"></i><br>Fitness</a></td>
+                            </tr>
+                            <tr>
+                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><i class="fa fa-users fa-lg"></i><br> Society</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><i class="fa fa-usd fa-lg"></i><br>Economy</a></td>
+                            </tr>
+                            <tr>
+                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><i class="fa fa-university fa-lg"></i><br>Politics</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><i class="fa fa-eye fa-lg"></i><br>Law</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-xs col-md col-lg card text-center">
+                    <div class="card-header">
+                        Sponsored Ads
+                        </div>
+                    <div class="card-body">
+                      <img src="./img/podcast.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                  </div>
             </div>
         </div>
 
@@ -363,7 +422,41 @@
                 </div>
             </div>
         </div>
+        <!-- resources modal -->
 
+        <div class="modal fade" id="resourcesModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">All Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center z-index=100">
+                        <table class="table table-white">
+                            <tbody>
+                                <tr>
+                                    <td><a role="button" data-toggle="modal" data-target="#healthModal"><i class="fa fa-heartbeat fa-lg"></i><br> Health</a></td>
+                                    <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><i class="fa fa-bicycle fa-lg"></i><br>Fitness</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a role="button" data-toggle="modal" data-target="#societyModal"><i class="fa fa-users fa-lg"></i><br> Society</a></td>
+                                    <td><a role="button" data-toggle="modal" data-target="#economyModal"><i class="fa fa-usd fa-lg"></i><br>Economy</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a role="button" data-toggle="modal" data-target="#politicsModal"><i class="fa fa-university fa-lg"></i><br>Politics</a></td>
+                                    <td><a role="button" data-toggle="modal" data-target="#lawModal"><i class="fa fa-eye fa-lg"></i><br>Law</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>    
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>            
         <!-- Blog idea modals -->
         <div class="modal fade" id="topicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -410,7 +503,7 @@
                                         <button class="btn btn-dark" type="Submit">Send</button>
                                     </div>
                                 </div>   
-                                </div>                      
+                            </div>                      
                         </form>
                     </div>
                     <div class="modal-footer">
