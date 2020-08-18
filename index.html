@@ -418,32 +418,28 @@
                                 <input class="form-control" type="email" name="email" id="email" placeholder="email">
                             </div>
                             <div class="form-group row"> 
-                                <div class="col">
-                                    Would you like to receive new blogs and tips?
+                                <div class="col mb-2">
+                                        Would you like to receive new blogs and tips?
+                                    <br>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
                                         <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
                                     </div>
+                                    <div class="form-check form-check-inline">            
+                                        <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
+                                        <label class="form-check-label" for="subscribeNo">No</label>
+                                    </div>
                                 </div>
-                                <div class="form-check form-check-inline">            
-                                    <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
-                                    <label class="form-check-label" for="subscribeNo">No</label>
-                                </div>
-                                <hr>
                                 <div class="form-group row">
                                     <label class="col form-label" for="blogIdea">What would you like to read about?</label>
                                     <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col">    
-                                        <button class="btn btn-dark" type="Submit">Send</button>
-                                    </div>
-                                </div>   
+                                </div> 
                             </div>                      
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button class="btn btn-dark" type="Submit">Send</button>
                     </div>
                 </div>
             </div>
