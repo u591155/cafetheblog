@@ -146,6 +146,10 @@ body{
     color: #717343;
 }
 
+.bg-olive{
+    background-image: linear-gradient(#6A4C32, #654734);
+}
+
 .menu{
     background-color: black;
 }

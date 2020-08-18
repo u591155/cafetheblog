@@ -56,7 +56,7 @@
                         <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
                         <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" data-toggle="modal" data-target="#resourcesModal"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                        <a class="dropdown-item" href="#resources"><i class="fa fa-handshake-o"></i> Resources</a></li>
                         <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
                         <a class="dropdown-item" href="#"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
                     </div>   
@@ -75,7 +75,7 @@
                     <a class="nav-link" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
                     <a class="nav-link" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
                     <a class="nav-link" href="#">-Blog Home-</a>
-                    <a class="nav-link" href="#healthResources">-Resources-</a>
+                    <a class="nav-link" href="#resources">-Resources-</a>
                 </nav>
             </ul>
         </div> 
@@ -121,64 +121,34 @@
                 </div>
             </div>
         </div>
-    
-        <!-- <div class="container container-resources">
-            <div class="row content">
-                <div class="col-3 text-center">
-                <hr>
-                <h2 id="resourcesToHelp" class="postTitle bg-white">Resources</h2>
-                    <table class="table table-white">
-                        <tbody>
-                            <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><img class="img-fluid" src="img/images.png" alt="health"><br> Health</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><img class="img-fluid"  src="img/160-1601341_fitness-logo-png-icon-fitness-logo-icon-png.png" alt="fitness"><br>Fitness</a></td>
-                            </tr>
-                            <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><img class="img-fluid" src="img/P_society_icon_brown.png" alt="society"><br> Society</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><img class="img-flud" src="img/205-2057879_piggy-bank-clipart-png-economic-icon.png" alt="economy"><br>Economy</a></td>
-                            </tr>
-                            <tr>
-                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><img class="img-fluid" src="img/politics-2506339-2097399.png" alt="politics"><br>Politics</a></td>
-                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><img class="img-fluid" src="img/law.png" alt="law"><br>Law</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div> -->
-
+        
         <div class="container container-resources">
             <div class="row content">
-                <div class="col-xs col-3 col-md-3 col-lg-3 text-center mt-5 mr-5">
-                <hr>
+                <div class="col-lg-6 col-md mt-5 mr-5 text-center" id="resources">
                 Resources
-                    <table class="table table-white">
+                    <table class="table table-white" id="resources">
                         <tbody>
                             <tr>
                                 <td><a role="button" data-toggle="modal" data-target="#healthModal"><i class="fa fa-heartbeat fa-lg"></i><br> Health</a></td>
                                 <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><i class="fa fa-bicycle fa-lg"></i><br>Fitness</a></td>
-                            </tr>
-                            <tr>
                                 <td><a role="button" data-toggle="modal" data-target="#societyModal"><i class="fa fa-users fa-lg"></i><br> Society</a></td>
                                 <td><a role="button" data-toggle="modal" data-target="#economyModal"><i class="fa fa-usd fa-lg"></i><br>Economy</a></td>
-                            </tr>
-                            <tr>
                                 <td><a role="button" data-toggle="modal" data-target="#politicsModal"><i class="fa fa-university fa-lg"></i><br>Politics</a></td>
                                 <td><a role="button" data-toggle="modal" data-target="#lawModal"><i class="fa fa-eye fa-lg"></i><br>Law</a></td>
                             </tr>
+                            <tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="col-xs col-md col-lg card text-center">
-                    <div class="card-header">
-                        Sponsored Ads
-                        </div>
-                    <div class="card-body">
-                      <img src="./img/podcast.jpg" class="img-fluid" alt="Responsive image">
+                <div class="col-lg col-md-4 card" style="width: 30rem;">
+                    <div class="card-header text-center">
+                    Featured Add
                     </div>
-                  </div>
+                    <img src="./img/podcast.jpg" class="card-img-top" alt="...">
+                </div>
             </div>
         </div>
+ 
 
         <!-- Modal Fitness -->
         <div class="modal fade" id="fitnessModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -422,49 +392,15 @@
                 </div>
             </div>
         </div>
-        <!-- resources modal -->
-
-        <div class="modal fade" id="resourcesModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">All Resources</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body text-center z-index=100">
-                        <table class="table table-white">
-                            <tbody>
-                                <tr>
-                                    <td><a role="button" data-toggle="modal" data-target="#healthModal"><i class="fa fa-heartbeat fa-lg"></i><br> Health</a></td>
-                                    <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><i class="fa fa-bicycle fa-lg"></i><br>Fitness</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a role="button" data-toggle="modal" data-target="#societyModal"><i class="fa fa-users fa-lg"></i><br> Society</a></td>
-                                    <td><a role="button" data-toggle="modal" data-target="#economyModal"><i class="fa fa-usd fa-lg"></i><br>Economy</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a role="button" data-toggle="modal" data-target="#politicsModal"><i class="fa fa-university fa-lg"></i><br>Politics</a></td>
-                                    <td><a role="button" data-toggle="modal" data-target="#lawModal"><i class="fa fa-eye fa-lg"></i><br>Law</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>    
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>            
+        
         <!-- Blog idea modals -->
         <div class="modal fade" id="topicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Would you like to submit your idea?</h5>
+                    <div class="modal-header bg-olive">
+                        <h5 class="modal-title text-white" id="staticBackdropLabel">Would you like to submit your idea?</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span aria-hidden="true" class="text-white">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
