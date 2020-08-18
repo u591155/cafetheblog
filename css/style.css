@@ -162,3 +162,17 @@ table .fa:hover{
     color: brown;
     font-size: 40px;
 }
+
+.cafeMenu{
+    background-image: url(../img/menu/coffee-beans-banner.jpg);
+    background-color: rgb(20, 16, 16);
+}
+
+#menuBody{
+    background-image: radial-gradient(rgb(36, 27, 27), rgb(51, 43, 43), rgb(32, 24, 2))
+}
+
+#menuList{
+    background-color: rgb(197, 197, 186);
+    font-size: 100%;
+}

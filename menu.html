@@ -10,11 +10,11 @@
      <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
      <link rel="stylesheet" href="https://fonts.google.com/?sidebar.open=true&selection.family=Pacifico" />
      <link rel="stylesheet" href="css/style.css"> 
-     <title>Home Page</title>
+     <title>Menu Page</title>
     
 </head>
-<body>
-<!--    <header class="jumbotron jumbotron-fluid d-none d-sm-block">  -->
+<body id="menuBody">
+   <header class="cafeMenu jumbotron-fluid d-none d-sm-block"> 
         <div class="container">
             <div class="row">
                 <div class="col-10 heading">
@@ -22,7 +22,7 @@
                 <h2>@Café the Blog!</h2>
                 </div>
                 <div class="col mt-auto">
- <!--                   <a href="#blogPost"><button type="button" class="btn btn-light btn-sm mb-4">Blog ideas</button></a> -->
+                   <a href="#orderNow"><button type="button" class="btn btn-warning btn-lg mb-5">ORDER NOW</button></a>
                 </div>
             </div>
         </div>
@@ -47,132 +47,233 @@
     
 <!-- MENU STARTS -->  
 
-    <div class="container mt-5 card p-3 mb-2 border-warning">
-        <h3 class="text-center text-dark mt-5 mb-5">Menu</h3>
-    <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
-          <!-- Coffee Card -->
-          <div class="card" style="width: 18rem">
-      
-            <div class="view overlay">
-              <img class="card-img-top" src="./img/menu/latte-macchiato.jpg" alt="Latte Macchiato">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-      
-            <div class="card-body">
-      
-              <h4 class="card-title">COFFEE</h4>
-              <p class="card-text">BLAH BLAH BLAH</p>
-                <li>1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <br>
-              <button type="button" class="btn btn-warning btn-md">Order Now!</button>
-            </div>
-          </div>
-          <!-- Coffee Card -->
-            
-        </div>
-        <div class="col mb-4">
-          <!-- Drinks Card -->
-          <div class="card" style="width: 18rem">
-            <div class="view overlay">
-              <img class="card-img-top" src="./img/menu/orange-juice.jpg" alt="Orange Juice">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-      
-            <div class="card-body">
-      
-              <h4 class="card-title">DRINKS</h4>
-              <p class="card-text">BLAH BLAH BLAH</p>
-                <li>1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <br>
-              <button type="button" class="btn btn-warning btn-md">Order Now!</button>
-      
-            </div>
-          </div>
+    <div class="container mt-5 card p-3 mb-2 border-warning" id="menuList">
+      <h3 class="text-center text-dark mt-5 mb-5">Menu</h3>
+      <div class="row row-cols-1 row-cols-md-2">
 
-          <!-- Drinks Card -->
-        </div>
-          
-        <div class="col mb-4">
-          <!-- Pastries Card -->
-          <div class="card" style="width: 18rem">
-      
-            <div class="view overlay">
-              <img class="card-img-top" src="./img/menu/croissantjpg.jpg" alt="Croissant">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-      
-            <div class="card-body">
-              <h4 class="card-title">PASTRIES</h4>
-              <p class="card-text">BLAH BLAH BLAH</p>
-                <li>1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <br>
-              <button type="button" class="btn btn-warning btn-md">Order Now!</button>
-      
-            </div>
-      
+        <!-- Coffee Card -->
+        <div class="card" style="width: 18rem">
+          <div class="view overlay">
+            <img class="card-img-top" src="./img/menu/strong-coffee.jpg" alt="Latte Macchiato">
           </div>
-          <!-- Pastries Card -->
-        </div>
-        <div class="col mb-4">
-          
-          <!-- Food Card -->
-          <div class="card" style="width: 18rem">
-      
-            <div class="view overlay">
-              <img class="card-img-top" src="./img/menu/bagel-salmon.jpg" alt="Salmon Bagel">
-              <a href="#!">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-      
-            <div class="card-body">
-              <h4 class="card-title">FOOD</h4>
-              <p class="card-text">BLAH BLAH BLAH</p>
-                <li>1: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 2: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <br>
-                <li>Option 4: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-                <br>
-              <button type="button" class="btn btn-warning btn-md">Order Now!</button>
-      
-            </div>
-      
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-title">COFFEE</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Desciption</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Coffee</td>
+                  <td>Fresh brewed coffee</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <td>Espresso Macchiato</td>
+                  <td>Espresso with milk foam</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>Caffe Latte</td>
+                  <td>Espresso, steamed milk and milk foam</td>
+                  <td>$4.00</td>
+                </tr>
+                <tr>
+                  <td>Flat White</td>
+                  <td>Espresso and steamed milk</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>Caffe Mocha</td>
+                  <td>Espresso, chocolate syrup, steamed milk and whipped cream</td>
+                  <td>$4.50</td>
+                </tr>
+                <tr>
+                  <td>Red Eye</td>
+                  <td>Espresso with coffee</td>
+                  <td>$3.00</td>
+                </tr>
+              </tbody>
+            </table>
+              <br>
+            <button type="button" class="btn btn-warning btn-md">Order Now!</button>
           </div>
-          <!-- Food Card -->
         </div>
+        <!-- Coffee Card -->  
+
+        <!-- Drinks Card -->
+        <div class="card" style="width: 18rem">
+          <div class="view overlay">
+            <img class="card-img-top" src="./img/menu/fresh-orange-juice.jpg" alt="Orange Juice">
+          </div>
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-title">DRINKS</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Desciption</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Orange Juice</td>
+                  <td>Fresh squeezed orange juice</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>Apple Juice</td>
+                  <td>Organic bottled juice</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <td>Herbal Tea</td>
+                  <td>English Breakfast, Green Tea or Oolong</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Lemonade</td>
+                  <td>Fresh squeezed lemonade</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <td>Iced Tea</td>
+                  <td>Peach, Raspberry, Pomegranate or Lemon</td>
+                  <td>$2.50</td>
+                </tr>
+                <tr>
+                  <td>Italian Soda</td>
+                  <td>Peach, Strawberry, Mango or Lime</td>
+                  <td>$2.50</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <button type="button" class="btn btn-warning btn-md">Order Now!</button>
+          </div>
+        </div>
+        <!-- End of Drinks Card -->
+      </div>
+
+
+      <div class="row row-cols-1 row-cols-md-2">
+        <!-- Pastries Card -->
+        <div class="card" style="width: 18rem">
+          <div class="view overlay">
+            <img class="card-img-top" src="./img/menu/pastries.jpg" alt="Latte Macchiato">
+          </div>
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-title">PASTRIES</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Desciption</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Croissant</td>
+                  <td>Plain, Chocolate or Almond</td>
+                  <td>$3.00</td>
+                </tr>
+                <tr>
+                  <td>Muffin</td>
+                  <td>Chocolate Chip, Blueberry, Banana Nut or Lemmon Poppy</td>
+                  <td>$3.00</td>
+                </tr>
+                <tr>
+                  <td>Cinnamon Roll</td>
+                  <td>Flaky pastry with cinnamon filling</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>Brownie</td>
+                  <td>Regular, Dark or with Nuts</td>
+                  <td>$2.00</td>
+                </tr>
+                <tr>
+                  <td>Cookies</td>
+                  <td>Chocolate Chip, Snickerdoodle, Sugar or Black and White</td>
+                  <td>$2.00</td>
+                </tr>
+                <tr>
+                  <td>Scones</td>
+                  <td>Chocolate Chips, Blueberry, Cranberry, or Jalapeno Cheddar</td>
+                  <td>$3.50</td>
+                </tr>
+              </tbody>
+            </table>
+              <br>
+            <button type="button" class="btn btn-warning btn-md">Order Now!</button>
+          </div>
+        </div>
+        <!-- End of Pastries Card -->
+          
+          
+        <!-- Food Card -->
+        <div class="card" style="width: 18rem">
+          <div class="view overlay">
+            <img class="card-img-top" src="./img/menu/sandwiches.jpg" alt="Sandwiches">
+          </div>
+          <div class="card-body bg-dark text-white">
+            <h4 class="card-title">FOOD</h4>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Desciption</th>
+                  <th>Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Breakfast Bagel</td>
+                  <td>Egg, cheese and your choice of ham, bacon or sausage</td>
+                  <td>$3.50</td>
+                </tr>
+                <tr>
+                  <td>Breakfast Burrito</td>
+                  <td>Egg, hash brown, cheese and your choice of ham, bacon or sausage</td>
+                  <td>$4.50</td>
+                </tr>
+                <tr>
+                  <td>Apple Cinnamon Oatmeal</td>
+                  <td>Steel cut oatmeal spiced with cinnamon and topped with apple slices</td>
+                  <td>$4.50</td>
+                </tr>
+                <tr>
+                  <td>BLT Sandwich</td>
+                  <td>Bacon, lettuce and tomato with aioli sauce</td>
+                  <td>$5.50</td>
+                </tr>
+                <tr>
+                  <td>Turkey Pesto Sandwich</td>
+                  <td>Turkey breast, provolone, tomato and basil pesto spread on focaccia</td>
+                  <td>$6.50</td>
+                </tr>
+                <tr>
+                  <td>Grilled Cheese and Tomato Soup</td>
+                  <td>Cheddar, provolone and mozzarella on white bread</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+            <br>
+            <button type="button" class="btn btn-warning btn-md">Order Now!</button>
+          </div>
+        </div>
+        <!-- End of Food Card -->
       </div>
       </div>
 
       <br>
-
 
     <!-- SUBSCRIPTION BOXES -->
 
