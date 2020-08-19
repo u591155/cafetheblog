@@ -165,7 +165,7 @@ table .fa:hover{
 
 .cafeMenu{
     background-image: url(../img/menu/coffee-beans-banner.jpg);
-    background-color: rgb(20, 16, 16);
+    background-size: contain;
 }
 
 #menuBody{
@@ -176,6 +176,26 @@ table .fa:hover{
     background-color: rgb(197, 197, 186);
     font-size: 100%;
 }
+
+.homeBackground{
+    padding: 250px 20px;
+    margin: 0;
+    background-image: url(../img/Work-Cafe.jpg);
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#homeBody{
+    background-color: lightgray;
+}
+
+#homeNav{
+    background-color: black;
+}
+
 
 .modal-dialog{
     width: 400px ;
