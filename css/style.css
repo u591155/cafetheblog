@@ -122,8 +122,6 @@ body{
     background-image: url(../img/coffeegrains.jpg);
     background-repeat: no-repeat;
     background-color: black;
-    /* background-position: center center; */
-    /* background-size: cover; */
     background-attachment: fixed;
     margin-top: 0;
 }
@@ -178,7 +176,7 @@ table .fa:hover{
 }
 
 .homeBackground{
-    padding: 250px 20px;
+    padding: 300px 20px;
     margin: 0;
     background-image: url(../img/Work-Cafe.jpg);
     background-repeat: no-repeat;
