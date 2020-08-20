@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+     <link rel="stylesheet" href="css/style.css"> 
+     <title>Home Page</title>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#theBlogNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="theBlogNavBar">   
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-md"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-coffee fa-md"></i> Menu</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="home_blog.html"><i class="fa fa-book fa-md"></i> Blog</a></li>
+                    <li class="nav-item"><a class="nav-link"  data-toggle="modal" data-target="#topicsModal"><i class="fa fa-arrow-down"></i> Blog ideas</a>
+                </ul>
+            </div>   
+        </div> 
+    </nav>
+    <header class="jumbotron jumbotron-fluid mainJumbo d-none d-sm-block">
+        <div class="container" id="test">
+            <div class="row">
+                <div class="col-10 heading">
+                <h1>The Blog!</h1>
+                <h2>@Café the Blog!</h2>
+                </div>
+            </div>
+        </div>
+    </header> 
+    
+    <div class="container mt-0" id="contentSection">
+        <div class="row">
+<!-- Display's only on xs screens -->
+            <div class="col blogCollapse d-block d-sm-none">
+                <h1 class="text-light text-center heading h1">The Blog<br>@Café the Blog!</h1>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item dropdown"></li>
+                    <a class="nav-link dropdown-toggle text-light"  data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Blog Topics</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"  href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Health</a>
+                        <a class="dropdown-item"  href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
+                        <a class="dropdown-item"  href="economy_blog.html"><i class="fa fa-money fa-md"></i> Money</a>
+                        <a class="dropdown-item"  href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Society</a>
+                        <a class="dropdown-item"  href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
+                        <a class="dropdown-item"  href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#resources"><i class="fa fa-handshake-o"></i> Resources</a></li>
+                        <a class="dropdown-item" href="#"><i class="fa fa-home fa-md"></i> Blog Page</a>
+                        <a class="dropdown-item" href="index.html"><i class="fa fa-coffee fa-md"></i> Coffee Shop</a>
+                    </div>   
+                </ul>
+            </div>
+     
+<!-- display on sm and up view ports  -->
+        <div class="col-sm-5 col-md-4 col-lg-3 col-xl-2 d-none d-sm-block mt-5 border-right">
+            <h3 class="text-dark ml-3 border-bottom">Topics</h3>
+            <ul class="list-unstyled" class="blogItems">
+                <nav class="nav flex-column">
+                    <a class="nav-link" href="health_blog.html"><i class="fa fa-user-md fa-md"></i> Health</a>
+                    <a class="nav-link" href="fitness_blog.html"><i class="fa fa-child fa-md"></i> Fitness</a>
+                    <a class="nav-link" href="economy_blog.html"><i class="fa fa-money fa-md"></i> Economy</a>
+                    <a class="nav-link" href="society_blog.html"><i class="fa fa-handshake-o fa-md"></i> Social</a>
+                    <a class="nav-link" href="politics_blog.html"><i class="fa fa-university fa-md"></i> Politics</a>
+                    <a class="nav-link" href="law_blog.html"><i class="fa fa-gavel fa-md"></i> Law</a>
+                    <a class="nav-link" href="#">-Blog Home-</a>
+                    <a class="nav-link" href="#resources">-Resources-</a>
+                </nav>
+            </ul>
+        </div> 
+            
+        <div class="col-sm col-md col-lg mt-4" id="postSection">
+        <h2 class="postTitle text-center mt-mb-5">Welcome Message</h2>
+            <p class="mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta aut fugiat enim eaque nulla ullam voluptas quisquam dolorum, dignissimos laboriosam fuga asperiores est voluptatibus qui, possimus nisi hic aperiam nemo! </p>
+        </div>
+        <div class="col-xl-2  d-none d-xl-block mt-5" class="sideTwo">
+            <div class="card bg-light text-left">
+                <div class="card-body">
+                    <a href="https://www.nucamp.co/home" target="_blank"><img class="ml-2" src="img/logo.png" alt="nucamp logo"></a>
+                    <p>This project was developed with skills gain at NUcamp coding Bootcamp</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-10">
+                    <h2 class="postTitle text-center mt-5 mb-5">New Blog Post</h2>
+                    <br>
+                    <h3>Stressful And Uncertain Times</h3>
+                    <hr>
+                    <p>It can be said that during modern history since the flu pandemic caused by H1N1 influenza A virus that lasted from February 1918 to April 2020 (which infected one third of the population in four successive waves) we have not seen anything until now. 
+                    Sure there has been some other diseases, but not one that has put the world to an abrupt shake. </p>
+                    <p>Population is larger and constant government shutdowns have occur. This is not about the economic impact or political measurements taken, but one piece that keeps being ignored in many media channels is the effect that is having in peoples mental health. 
+                    We are creatures that socialize, and even though technology allows you to communicate with each other within seconds around the world nothing will compare to close proximity with another human. Not just people that we know through social platforms, but the ones that matter the most our loved ones and friends. </p>    
+                    <p>Public health actions, such as social distancing, can make people feel isolated and lonely and can increase stress and anxiety. However, these actions are necessary to reduce the spread of COVID-19. Fear and anxiety about a new disease and what could happen can be overwhelming and cause strong emotions in adults and children. 
+                    Something that can be useful as a stress reliever is taking care of your loved ones, but there should be a balance with also taking care of yourself. It is difficult to identify or even come to terms with the idea that a person is having a mental struggle during these difficult times. </p>    
+                    <br>        
+                <pre>
+                    • Fear and worry about your own health and the health of your loved
+                    ones, your financial situation or job, or loss of support services you rely on.
+                    • Changes in sleep or eating patterns.
+                    • Difficulty sleeping or concentrating.
+                    • Worsening of chronic health problems.
+                    • Worsening of mental health conditions.
+                    • Increased use of tobacco, and/or alcohol and other substances.
+                </pre>
+                <p>It is important to find ways to maintain a proper mental balance every day, but it can be difficult when the world in going through a time where sometimes it seems like we are just rolling with the punches. Understand that depressing is a lot more comment than you might imagine, so do not feel like you are the only one. Start small... 
+                talk to a close friend or family member about what you are going through and you might find that you might not be the only one.  </p>     
+                </div>
+            </div>
+        </div>
+        
+        <div class="container container-resources">
+            <div class="row content">
+                <div class="col-lg-6 col-md mt-5 mr-5 text-center" id="resources">
+                Resources
+                    <table class="table table-white" id="resources">
+                        <tbody>
+                            <tr>
+                                <td><a role="button" data-toggle="modal" data-target="#healthModal"><i class="fa fa-heartbeat fa-lg"></i><br> Health</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#fitnessModal"><i class="fa fa-bicycle fa-lg"></i><br>Fitness</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#societyModal"><i class="fa fa-users fa-lg"></i><br> Society</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#economyModal"><i class="fa fa-usd fa-lg"></i><br>Economy</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#politicsModal"><i class="fa fa-university fa-lg"></i><br>Politics</a></td>
+                                <td><a role="button" data-toggle="modal" data-target="#lawModal"><i class="fa fa-eye fa-lg"></i><br>Law</a></td>
+                            </tr>
+                            <tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg col-md-4 card" style="width: 30rem;">
+                    <div class="card-header text-center">
+                    Featured Add
+                    </div>
+                    <img src="./img/podcast.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+ 
+
+        <!-- Modal Fitness -->
+        <div class="modal fade" id="fitnessModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Fitness Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Older Adults And Exercise</h5>
+                                <p class="card-text">Learn the benefits of exercise for older adults and how to get started.</p>
+                                <a href="https://www.nia.nih.gov/health/exercise-physical-activity" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Tips For Home Workouts</h5>
+                                <p class="card-text">There are so many options for exercising, here are some help to find yours.</p>
+                                <a href="https://www.shape.com/fitness/tips/our-25-all-time-best-workout-tips" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Fitness Also Needs Diet</h5>
+                                <p class="card-text">The word diet should not scare you, but is important for the body and mind.</p>
+                                <a href="https://www.healthline.com/health/fitness-exercise-eating-healthy#:~:text=Nutrition%20is%20important%20for%20fitness,as%20choosing%20vegetables%20over%20doughnuts." 
+                                class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+
+        <!-- Health Modal -->
+        <div class="modal fade" id="healthModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Health Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Mental Health</h5>
+                                <p class="card-text">Taking care of your health should not be hard and should be made a priority.</p>
+                                <a href="https://www.onemedical.com/services/mentalhealth/?gclid=Cj0KCQjw7Nj5BRCZARIsABwxDKKLgjeODtGWbu0sDY4OWQXZG083kIsIltLt0B5HSLnmFaSjDpjpq6oaAmhZEALw_wcB" 
+                                class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Help With Addiction</h5>
+                                <p class="card-text">Addictions is difficult to deal with, but there are many places that can lay a hand.</p>
+                                <a href="https://www.samhsa.gov/find-help/national-helpline" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Anxiety a silent enemy</h5>
+                                <p class="card-text">Just because you don't see it anxiety and depression are real, find help.</p>
+                                <a href="https://www.crisistextline.org/topics/anxiety/?gclid=Cj0KCQjw7Nj5BRCZARIsABwxDKKUEOubqWIXzj0Jc1vLl16V0llH7KuQcVLuzrVe6akkFRZxvF-QbycaAhZpEALw_wcB#what-is-anxiety-1"
+                                  class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Economy Modal -->
+        <div class="modal fade" id="economyModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Economy Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Economic knowledge</h5>
+                                <p class="card-text">The Balance makes personal finance easy to understand. It is home to experts who provide clear, practical advice on managing your money.</p>
+                                <a href="https://www.thebalance.com/about-us" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Loans And Credit</h5>
+                                <p class="card-text">Everyone needs help when looking to make purchases whether big or small, so here we help you shine some light with comparisons.</p>
+                                <a href="https://www.nerdwallet.com/blog/finance/how-to-build-a-budget/" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Government Services And Information</h5>
+                                <p class="card-text">Partnering with federal agencies, we reach out to people where they are, to connect them with their government.</p>
+                                <a href="https://www.usa.gov/" target="_blank" class="btn btn-danger">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Society Modal -->
+        <div class="modal fade" id="societyModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Society Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Shop Small And Help Your Community</h5>
+                                <p class="card-text">Local business need help, find ways that you can shop the things you need local.</p>
+                                <a href="https://www.moneycrashers.com/shop-local-support-small-business-local-economy/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Local Events To Help You Stay Connected</h5>
+                                <p class="card-text">Find out what is happening locally to stay connected about what is going on.</p>
+                                <a href="https://www.eventbrite.com/d/ca--san-francisco/community--events/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Society And Loss Of Housing</h5>
+                                <p class="card-text">Losing the place is very difficult, but there are many resources that can help.</p>
+                                <a href="https://chp-sf.org/properties-landing/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Politics Modal -->
+        <div class="modal fade" id="politicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Politics Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Political Indicators</h5>
+                                <p class="card-text">Here are some ways to stay informed about the current political climate and indicatiors.</p>
+                                <a href="https://www.politicalresources.com/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Public Policy</h5>
+                                <p class="card-text">What is a policy can be hard to understand, specially when some might seem like common sense.</p>
+                                <a href="https://agb.org/public-policy-resources/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">COVID-19 & Politics</h5>
+                                <p class="card-text">Politics right now cannot be talked about side by side with the current pandemic, and here we show you why.</p>
+                                <a href="https://www.chathamhouse.org/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+        <!-- Law Modal -->
+        <div class="modal fade" id="lawModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Law Resources</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Evictions And Your Rights</h5>
+                                <p class="card-text">In big cities most people rent, but what happens if you can't pay?</p>
+                                <a href="https://flip.lease/learn/being-evicted/eviction-laws" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">American Civil Liberties Union</h5>
+                                <p class="card-text">With 100 years of experience fighting for rights, they are experts on change.</p>
+                                <a href="https://www.aclu.org/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                        <div class="card bg-light">
+                            <div class="card-body">
+                                <h5 class="card-title">Lawyer's Directory</h5>
+                                <p class="card-text">Help finding a lawyer and tips on what you can do to protect your rights.</p>
+                                <a href="https://www.avvo.com/" class="btn btn-danger" target="_blank">Go</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Blog idea modals -->
+        <div class="modal fade" id="topicsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header bg-olive">
+                        <h5 class="modal-title text-white" id="staticBackdropLabel">Would you like to submit your idea?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="text-white">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="firstName" class="col-form-label">First Name</label>
+                                <input class="form-control" type="text" id="firstName" name="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group row">
+                                <label for="lastName" class="col-form-label">Last Name</label>
+                                <input class="form-control" type="text" id="lastName" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-form-label" for="email">Email</label>
+                                <input class="form-control" type="email" name="email" id="email" placeholder="email">
+                            </div>
+                            <div class="form-group row"> 
+                                <div class="col mb-2">
+                                        Would you like to receive new blogs and tips?
+                                    <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" id="subscribeYes" name="blogSubscribe" value="yes">
+                                        <label class="form-check-label" for="subscribeYes" name="blogSubscribe"> Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">            
+                                        <input class="form-check-input" type="radio" id="subscribeNo" name="blogSubscribe" value="no">
+                                        <label class="form-check-label" for="subscribeNo">No</label>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col form-label" for="blogIdea">What would you like to read about?</label>
+                                    <textarea class="form-control" name="blogIdea" cols="30" rows="3" placeholder="Type what you are interested in"></textarea>
+                                </div> 
+                            </div>                      
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button class="btn btn-dark" type="Submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> 
+   
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled" class="bottom-links">
+                        <li><a class="text-white" href="index.html">Home</a></li>
+                        <li><a class="text-white" href="menu.html">Menu</a></li>
+                        <li><a class="text-white" href="home_blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <h5>Contact Us</h5>
+                    <a role="button" class="btn btn-link text-white" href="tel:#"><i class="fa fa-phone"></i> 1-415-688-7766</a><br />
+                    <a role="button" class="btn btn-link text-white" href="mailto:#"><i class="fa fa-envelope-o"></i> blogs@cafetheblog.com</a>
+                </div>                 
+            </div>
+        </div>
+    </footer>
+
+    
+    
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+    
+    
+</body>
+</html>
